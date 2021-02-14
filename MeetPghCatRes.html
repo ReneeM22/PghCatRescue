@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+    <link rel="stylesheet" href="CSSPghCatRes.css"/>
+
+    <title>Pittsburgh Cat Rescue</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="HomePghCatRes.html"><img src="images/logo2.png" height="80" width="80"/></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#MyNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="MyNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="HomePghCatRes.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="#">Meet the Cats</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Volunteer</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Donate</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <h2>Request an Adoption Appointment:</h2>
+    <h5 id="reqAdApp">Would you like to adopt one of Pittsburgh Cat Rescue's fabulous felines? Request an appointment to visit the shelter via the form below or by calling 412-123-4567.</h5>
+    <div class="text-center">
+        <button id="apptBtn" type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal">
+            Request Apointment
+        </button>
+    </div>
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Request an Appointment</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+                <form>
+                    <fieldset>
+                        <legend>Contact Information:</legend>
+                        Name: <input type="text"/><br>
+                        Email: <input type="text"/><br>
+                        Phone number: <input type="text"/><br>
+                    </fieldset>
+                    <fieldset>
+                        <legend>First date preference:</legend>
+                            <input type="date"/><br>
+                            <input type="checkbox" id="morning"/> <label for="morning">Morning</label>
+                            <input type="checkbox" id="afternoon"/> <label for="morning">Afternoon</label>
+                            <input type="checkbox" id="evening"/> <label for="morning">Evening</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Second date preference:</legend>
+                            <input type="date"/><br>
+                            <input type="checkbox" id="morning"/> <label for="morning">Morning</label>
+                            <input type="checkbox" id="afternoon"/> <label for="morning">Afternoon</label>
+                            <input type="checkbox" id="evening"/> <label for="morning">Evening</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Third date preference:</legend>
+                            <input type="date"/><br>
+                            <input type="checkbox" id="morning"/> <label for="morning">Morning</label>
+                            <input type="checkbox" id="afternoon"/> <label for="morning">Afternoon</label>
+                            <input type="checkbox" id="evening"/> <label for="morning">Evening</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Adoption preferences:</legend>
+                        <label for="particularCats">Are there any particular cats you would like to meet during your appointment?:</label> 
+                        <input id="particularCats" type="text"/>
+                        <label for="numCats">How many cats are you interested in adopting?</label>
+                        <select id="numCats">
+                            <option value="numCats1">1</option>
+                            <option value="numCats2">2</option>
+                            <option value="numCats2">3</option>
+                            <option value="numCatsIdk">Not Sure</option>
+                        </select>
+                        <label>What else are you looking for in your new furry friend? Select all that apply.</label>
+                        <input type="checkbox" id="adult"/><label for="adult">Adult Cat</label>
+                        <input type="checkbox" id="kitten"/><label for="kitten">Kitten</label>
+                        <input type="checkbox" id="likesCats"/><label for="likesCats">Good with other cats</label>
+                        <input type="checkbox" id="likesDogs"/><label for="likesDogs">Good with dogs</label><br>
+                        <input type="checkbox" id="likesKids"/><label for="likesKids">Good with children</label>
+                        <input type="checkbox" id="lapCat"/><label for="lapCat">Lap cat</label>
+                        <input type="checkbox" id="playCat"/><label for="playCat">Playful cat</label>
+                        
+                    </fieldset>
+                </form>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-warning">Submit</button>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+    <h2>Available Cats:</h2>
+    <div class="card-deck">
+            <div class="card">
+                <img class="card-img-top" src="images/catBob.jpg" alt="A cat named Bob">
+                <div class="card-body">
+                    <h5 class="card-header">Bob</h5>
+                    <h6 class="card-text">Male | 5 years old</h6>
+                    <p class="card-text">Likes:  Pets. Lounging.</p>
+                    <p class="card-text">Dislikes:  Children.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="images/catMuffin.jpg" alt="A cat named Muffin">
+                <div class="card-body">
+                    <h5 class="card-header">Muffin</h5>
+                    <h6 class="card-text">Female | 6 months old</h6>
+                    <p class="card-text">Likes:  Treats. Laps.</p>
+                    <p class="card-text">Dislikes:  Other animals.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="images/catBelle.jpg" alt="A cat named Belle">
+                <div class="card-body">
+                    <h5 class="card-header">Belle</h5>
+                    <h6 class="card-text">Female | 6 months old</h6>
+                    <p class="card-text">Likes:  Playing. Napping in the sun.</p>
+                    <p class="card-text">Dislikes:  Large dogs.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="images/catDaphne.jpg" alt="A cat named Daphne">
+                <div class="card-body">
+                    <h5 class="card-header">Daphne</h5>
+                    <h6 class="card-text">Female | 2 years old</h6>
+                    <p class="card-text">Likes:  Bird watching.</p>
+                    <p class="card-text">Dislikes:  Too much petting.</p>
+                </div>
+            </div>
+    </div>
+    <div class="card-deck">
+            <div class="card">
+                <img class="card-img-top" src="images/catCupcake.jpg" alt="A cat named Cupcake">
+                <div class="card-body">
+                    <h5 class="card-header">Cupcake</h5>
+                    <h6 class="card-text">Female | 4 years old</h6>
+                    <p class="card-text">Likes:  Watching TV. People of all ages.</p>
+                    <p class="card-text">Dislikes:  Being brushed.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="images/catEdwardKittenhands.jpg" alt="A cat named Edward Kittenhands">
+                <div class="card-body">
+                    <h5 class="card-header">Edward Kittenhands</h5>
+                    <h6 class="card-text">Male | 2 years old</h6>
+                    <p class="card-text">Likes:  Tall scratching posts. Playing.</p>
+                    <p class="card-text">Dislikes:  Water beds.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="images/catPhyllis.jpg" alt="A cat named Phyllis">
+                <div class="card-body">
+                    <h5 class="card-header">Phyliss</h5>
+                    <h6 class="card-text">Female | 8 years old</h6>
+                    <p class="card-text">Likes:  Napping. Treats.</p>
+                    <p class="card-text">Dislikes:  Chasing toys.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="images/catReese.jpg" alt="A cat named Reese">
+                <div class="card-body">
+                    <h5 class="card-header">Reese</h5>
+                    <h6 class="card-text">Male | 3 years old</h6>
+                    <p class="card-text">Likes:  Meal times. Lounging.</p>
+                    <p class="card-text">Dislikes:  Exercise.</p>
+                </div>
+            </div>
+        </div>
+    
+
+    <div class="text-center">
+        <a href="#" id="toTopBtn" class="btn btn-warning">Back to Top of Page</a>
+    </div>
+    
+
+
+    <footer class="site-footer">
+        <div class="container container-fluid">
+            <div class="row">
+                <div class="col-12 col-sm-4 text-center">
+                    <h5>Pittsburgh Cat Rescue</h5>
+                        <p>123 Feline Drive</p>
+                        <p>Pittsburgh, PA 15206</p>
+                </div>
+                <div class="col-12 col-sm-4 text-center">
+                    <h5>Social</h5>
+                        <a class="btn btn-social-icon btn-instagram" target="_blank" href="http://instagram.com/"><i class="fa fa-lg fa-instagram"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" target="_blank" href="http://facebook.com/"><i class="fa fa-lg fa-facebook"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" target="_blank" href="http://twitter.com/"><i class="fa fa-lg fa-twitter"></i></a>
+                </div>
+                <div class="col text-center">
+                    <a role="button" class="btn btn-link" href="tel:+4121234567"><i class="fa fa-phone"></i> 412-123-4567</a><br>
+                    <a role="button" class="btn btn-link" href="mailto:contact@pghcatrescue.com"><i class="fa fa-envelope-o"></i> contact@pghcatrescue.com</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="JSPghCatRes.js"></script>
+
+</body>
+
+</html>
